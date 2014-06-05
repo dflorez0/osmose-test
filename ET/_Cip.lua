@@ -181,7 +181,9 @@ cip.advanced = {
 --   }
 -- }
 
-cip:addUnit("CipUnit", {type = 'Process', addToProblem='j1'})
+cip:addLocation(myLocation, {x=69.9, y=75.6})
+
+cip:addUnit("CipUnit", {type = 'Process', addToProblem='j1', location=myLocation})
 
 cip["CipUnit"]:addStreams({  
   cleaning_agent = qt { 'cleaning_agent_temp', 0,'tank_temp','cleaning_agent_load',3, 'water_h'},
