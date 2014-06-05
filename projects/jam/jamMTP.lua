@@ -9,7 +9,7 @@
 
 local osmose = require 'osmose'
 
-local project = osmose.Project('LuaJamMTP', 'OperatingCost')
+local project = osmose.Project('LuaJamMTP', 'MER')
 
 --project.operationalCosts = {cost_elec_in = 17.19, cost_elec_out = 16.9, op_time=8000.0}
 project.operationalCosts = 'data/JAM_operational_costs.ods'
@@ -29,5 +29,5 @@ local oneRun = osmose.Eiampl(project)
 
 osmose.Glpk(oneRun)
 
-osmose.Graph(oneRun,'svg')
+osmose.Graph(oneRun)
 

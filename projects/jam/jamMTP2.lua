@@ -7,7 +7,7 @@
 --]]------------------------------------------------------
 
 
-local osmose = require 'lib.osmose'
+local osmose = require 'osmose'
 
 local project = osmose.Project('LuaJamMTP2', 'OperatingCost')
 
