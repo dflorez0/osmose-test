@@ -9,6 +9,8 @@
 
 
 
+local osmose = require 'osmose.lib.osmose'
+
 local project = osmose.Project('S_Problem_mass2_qt_cost_Time', 'OperatingCost')
 
 --project.operationalCosts = {cost_elec_in = 17.19, cost_elec_out = 16.9, op_time= 2000.0}
