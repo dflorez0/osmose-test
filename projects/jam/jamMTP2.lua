@@ -11,7 +11,8 @@ local osmose = require 'osmose'
 
 local project = osmose.Project('LuaJamMTP2', 'OperatingCost')
 
-project.operationalCosts = {cost_elec_in = 17.19, cost_elec_out = 16.9, op_time=8000.0}
+--project.operationalCosts = {cost_elec_in = 17.19, cost_elec_out = 16.9, op_time=8000.0}
+project.operationalCosts = 'jam_op_costs.csv'
 
 project:load(
 	{cip = "ET.Cip",						with = 'data/JAM_values_mtp_2_times.ods'},
@@ -19,13 +20,11 @@ project:load(
 	{gen = "ET.generic_utilities"}
 )
 
-project:periode(1):time(1)
---project:periode(2):time(2)
-
+project:periode(1):time(2)
+project:periode(2):time(2)
 
 local oneRun = osmose.Eiampl(project)
 
 osmose.Glpk(oneRun)
 
---osmose.Graph(oneRun,'svg')
-
+osmose.Graph(oneRun)
