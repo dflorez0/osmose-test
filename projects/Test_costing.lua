@@ -28,4 +28,4 @@ osmose.Glpk(oneRun)
 
 osmose.Graph(oneRun)
 
-osmose.PostCompute(oneRun)
+osmose.PostPrint(oneRun)
