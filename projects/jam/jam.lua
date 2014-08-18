@@ -7,12 +7,12 @@
 --]]------------------------------------------------------
 
 
-local osmose = require 'osmose'
+local osmose = require 'lib.osmose'
 
 local project = osmose.Project('LuaJam', 'MER')
 
 project:load(
-	{cip = "ET._Cip"},
+	{cip = "ET.Cip"},
   {utilities = "ET.generic_utilities"},
 	{cm1 = "ET.CookingMixing"},
 	{cm2 = "ET.CookingMixing", with = 'CM2_inputs.csv'}
@@ -21,12 +21,17 @@ project:load(
 -- operationalCosts to be used only when objective is YearlyOperatingCost
 --project.operationalCosts={cost_elec_in=2, cost_elec_out=5, op_time=8600}
 
-local oneRun = osmose.Eiampl(project)
+--osmose.Eiampl(project)
 
-osmose.Glpk(oneRun)
+-- osmose.Glpk(oneRun)
+
+-- osmose.Graph(oneRun)
+
+project:solve()
+
+print(project:postCompute('jam_postcompute'))
 
 
 
-osmose.Graph(oneRun)
 
 
