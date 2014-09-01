@@ -19,7 +19,7 @@ project:load(
 )
 
 -- operationalCosts to be used only when objective is YearlyOperatingCost
---project.operationalCosts={cost_elec_in=2, cost_elec_out=5, op_time=8600}
+project.operationalCosts={cost_elec_in=2, cost_elec_out=5, op_time=8600}
 
 --osmose.Eiampl(project)
 
