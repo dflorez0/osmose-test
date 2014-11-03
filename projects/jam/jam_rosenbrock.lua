@@ -2,6 +2,13 @@ function jam_rosenbrock(args)
 
 	local value = getTag('raw_water_flow') + 2
 
+	assert(getUnit('CipUnit'))
+
+	assert(getStream('cleaning_agent'))
+
+	local opcost = getResults().opcost[1] * 2
+
+
 	local x= args['x1']
 	local y= args['x2']
 
@@ -10,4 +17,3 @@ function jam_rosenbrock(args)
 
 	return f1+f2
 end
-
