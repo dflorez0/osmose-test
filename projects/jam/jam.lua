@@ -27,11 +27,7 @@ project.operationalCosts={cost_elec_in=2, cost_elec_out=5, op_time=8600}
 
 -- osmose.Graph(oneRun)
 
-project:solve()
+project:solve({graph=false})
 
-print(project:postCompute('jam_postcompute'))
-
-
-
-
+project:compute('jam_postcompute.lua')
 
