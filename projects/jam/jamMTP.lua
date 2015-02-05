@@ -24,10 +24,5 @@ project:load(
 project:periode(1):time(3)
 project:periode(2):time(3)
 
-
-local oneRun = osmose.Eiampl(project)
-
-osmose.Glpk(oneRun)
-
-osmose.Graph(oneRun)
+project:solve({graph=false})
 
