@@ -2,6 +2,7 @@ config.lua
 results/
 results
 lib/
+tmp/
 lib
 *.dat
 *.rst
