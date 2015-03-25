@@ -7,8 +7,8 @@ v = setTag('return_temp', 150);
 
 disp(['Unit Name: ', u.name]);
 disp(['Stream Name: ', s.name]);
-disp(['Tag Value: ', num2str(t)]);
-disp(['New Tag Value: ', num2str(v)]);
-disp(['Check Tag Value: ', num2str(getTag('return_temp'))]);
+disp(['Tag Value: ', (t)]);
+disp(['New Tag Value: ', (v(1,1))]);
+disp(['Check Tag Value: ', (getTag('return_temp'))]);
 
 clear all;
