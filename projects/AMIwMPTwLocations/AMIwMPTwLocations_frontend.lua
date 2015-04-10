@@ -25,14 +25,12 @@ local buildingDataHeader = {
 
 local buildingData = project:loadData({dataPath = 'AMIwMPTwLocations_data.csv', dataHeader = buildingDataHeader})
 
--- project.clusters({e1={'1'}, e2={'2'}, e3={'1','2','3'}})
+project.clusters = ({e1={'A'}, e2={'B'}, e3={'C'}})
+project:loadClusters(project.clusters)
 
---project:load(
---	{building = "_examples/AMI_ET", withData = buildingData}  --, with = 'data/MultiTime_test.csv'}
---)
 for ID,data in pairs(buildingData) do
    project:load(
-           {building = "_examples/AMI_ET", locations = buildingData[ID]['location'], withData = {[ID]=data}, with = 'MPTdata/' .. ID .. '.csv'}
+           {['building'..ID] = "_examples/AMI_ET", locations = {buildingData[ID]['location']}, withData = {[ID]=data}, with = 'MPTdata/' .. ID .. '.csv'}
    )
 end
 
