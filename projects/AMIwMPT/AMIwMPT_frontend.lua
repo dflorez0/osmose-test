@@ -23,13 +23,14 @@ local buildingDataHeader = {
 }
 
 local buildingData = project:loadData({dataPath = 'AMIwMPT_data.csv', dataHeader = buildingDataHeader})
+project:loadClusters(project.clusters)
 
 --project:load(
 --	{building = "_examples/AMI_ET", withData = buildingData}  --, with = 'data/MultiTime_test.csv'}
 --)
 for ID,data in pairs(buildingData) do
    project:load(
-           {building = "_examples/AMI_ET", withData = {[ID]=data}, with = 'MPTdata/' .. ID .. '.csv'}
+           {['building'..ID] = "_examples/AMI_ET", withData = {[ID]=data}, with = 'MPTdata/' .. ID .. '.csv'}
    )
 end
 

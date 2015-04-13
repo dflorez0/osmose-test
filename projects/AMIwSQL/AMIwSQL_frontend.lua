@@ -7,7 +7,7 @@ local lfs = require('lfs')
 
 local osmose = require 'lib.osmose'
 
-local project = osmose.Project('AMI', 'YearlyOperatingCost')
+local project = osmose.Project('AMIwSQL', 'YearlyOperatingCost')
 
 -- operationalCosts to be used only when objective is YearlyOperatingCost
 project.operationalCosts = {cost_elec_in = 17.19, cost_elec_out = 16.9, op_time= 2000.0}
@@ -54,6 +54,8 @@ for k,v in pairs(buildingData) do
     print(k,v)
   end
 end
+
+project:loadClusters(project.clusters)
 
 --project:load(
 --	{building = "_examples/AMI_ET", withData = buildingData}  --, with = 'data/MultiTime_test.csv'}

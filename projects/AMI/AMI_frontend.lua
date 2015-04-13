@@ -22,28 +22,20 @@ local buildingDataHeader = {
    }
 }
 
-local buildingData = project:loadData({dataPath = 'AMI_data.csv', dataHeader = buildingDataHeader})
--- 2nd option (required for MPT or Locations - see regarding examples):
--- for ID,data in pairs(buildingData) do
---    project:load(
---            {building = "_examples/AMI_ET", withData = {[ID]=data}}
---    )
--- end
+local buildingData = project:loadData({dataPath = 'AMI_data_red.csv', dataHeader = buildingDataHeader})
 
-for k,v in pairs(buildingData) do
-  print(k)
-  for k,v in pairs(v) do
-    print(k,v)
-  end
-end
+-- nsc: loading the clusters here does not work for AMI since the clusters are loaded and loaded again resulting in a table with the same cluster(s) several times. This leads to tuples in the eiampldata.in file
+project:loadClusters(project.clusters)
 
 --project:load(
 --	{building = "_examples/AMI_ET", withData = buildingData}  --, with = 'data/MultiTime_test.csv'}
 --)
+-- 2nd option (required for MPT or Locations - see regarding examples):
 for ID,data in pairs(buildingData) do
-   project:load(
-           {building = "_examples/AMI_ET", withData = {[ID]=data}}  --, with = 'MPTdata/' .. ID .. '.csv'}
-   )
+ project:load(
+         {['building'..ID] = "_examples/AMI_ET", withData = {[ID]=data}}  --, with = 'MPTdata/' .. ID .. '.csv'}
+--            {building = "_examples/AMI_ET", withData = {[ID]=data}}  --, with = 'MPTdata/' .. ID .. '.csv'}
+ )
 end
 
 project:periode(1):time(1)
