@@ -4,10 +4,12 @@
 
   --]]------------------------------------------------------
 
+-- Set followings values in config.lua before running :
+--
+-- OSMOSE_ENV["LUA_EXE"] = path to lua executable 
+-- OSMOSE_ENV["MOO_PATH"] = path to moo folder
+-- OSMOSE_ENV["MATLAB_EXE"] = path to matlab executable
 
---require ("mobdebug").start()
---os.execute ('C:\\ampl\\ampl.lic')
-  
 local osmose = require 'lib.osmose'
 
 local project = osmose.Project('biomoo', 'OperatingCost')   
@@ -56,13 +58,14 @@ project:load(
 	
 project:periode(1):time(1)
 
+
 project:optimize {
   software='MOO',
   postcompute='biomoo_postcompute.lua',
   objectives_size=2,
   variables={sc_price={lower_bound='0.03', upper_bound='0.1'},
              co2tax={lower_bound='0.005', upper_bound='0.1'}},
-  method={max_iterations= 30,
+  method={max_iterations= 100,
           initial_population=10,
           },
   }
