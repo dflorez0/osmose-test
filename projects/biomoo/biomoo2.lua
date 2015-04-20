@@ -65,9 +65,15 @@ project:optimize {
   objectives_size=2,
   variables={sc_price={lower_bound='0.03', upper_bound='0.1'},
              co2tax={lower_bound='0.005', upper_bound='0.1'}},
-  method={max_iterations= 100,
-          initial_population=10,
+  method={max_iterations      = 100,
+          initial_population  = 10,
           },
+  monitor={moo_restart_monitor  = 3,
+          moo_count_monitor     = 30,
+          moo_speed_monitor     = 30,
+          moo_objective_monitor = 30,
+          moo_stop_monitor      = 30,
+          }
   }
 
 print(project.results.opcost[1])
