@@ -38,7 +38,7 @@ local loadedData = project:loadData({
   dbName = 'yourdb', 
   dbUser = 'yourusername', 
   dbTable = 'table_to_read', 
-  dataHeader = dataColumns , 
+  dataHeader = dataColumns, 
   conditions = your_conditions,
 --   sortColumns = true,
 })
@@ -60,6 +60,9 @@ project:periode(1):time(1)
 
 -- project:solve({graph=false, clusters={'e1','e2'}} )
 
+-- the luatable has to be of format
+-- "value = luatable[ID][columnA]" or
+-- "value = luatable[ID]" (still the desired column name has to be passed: columns = {'columnA'},
 project:writeData({luatable = loadedData, 
   dbName = 'yourdb', 
   dbUser = 'yourusername', 
