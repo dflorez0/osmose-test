@@ -16,7 +16,7 @@ project.operationalCosts = {cost_elec_in = 17.19, cost_elec_out = 16.9, op_time=
 -- ############### LOAD DATA ####################
 -- ##############################################
 
--- specify which data to load (first specified column title will be used as id)
+-- specify which data to load (first specified column title will be used as first key for the luatable i.e. it should be the primary key of the sql table)
 local dataColumns = [[
    ID,
    columnA,
@@ -37,10 +37,14 @@ local your_conditions =  [[
 local loadedData = project:loadData({
   dbName = 'yourdb', 
   dbUser = 'yourusername', 
+--   passwd = 'yourpassword',                -- has to be provided if localhost and port number are provided
   dbTable = 'table_to_read', 
+--   dbHost = 'localhost',                   -- default is localhost (db is running on your machine)
+--   dbPort = 5432,                          -- enter your port number here (default is 5432)
   dataHeader = dataColumns, 
   conditions = your_conditions,
---   sortColumns = true,
+--   sortColumns = true,                        -- if this flag is set to true the column titles will be the first lua table key and the primary key will be the second (required e.g. for R)
+
 })
 
 project:loadClusters(project.clusters)
@@ -66,7 +70,10 @@ project:periode(1):time(1)
 project:writeData({luatable = loadedData, 
   dbName = 'yourdb', 
   dbUser = 'yourusername', 
-  dbTable = 'table_to_write', 
+--   passwd = 'yourpassword',                -- has to be provided if localhost and port number are provided
+  dbTable = 'table_to_read', 
+--   dbHost = 'localhost',                   -- default is localhost (db is running on your machine)
+--   dbPort = 5432,                          -- enter your port number here (default is 5432)
   rowID = 'ID', 
   columns = {'columnA', 'columnB'},
 })
