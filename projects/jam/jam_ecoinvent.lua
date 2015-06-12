@@ -7,15 +7,16 @@
 --]]------------------------------------------------------
 
 
-local osmose = require 'osmose'
+local osmose = require 'lib.osmose'
 
 local project = osmose.Project('LuaJam', 'OperatingCost')
 
 project.ecoinvent = {
-        impactMethodName = 'CML 2001', -- USEtox
-        impactCategoryName = 'photochemical oxidation (summer smog)', -- human toxicity
-        name = 'EBIR', -- total
-    }
+  impactMethodName = 'CML 2001', -- USEtox
+  impactCategoryName = 'photochemical oxidation (summer smog)', -- human toxicity
+  name = 'EBIR', -- total
+  folder = 'projects/jam' -- path to the ecoinvent folder
+}
 
 
 project:load(
