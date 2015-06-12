@@ -7,3 +7,5 @@ lib
 *.dat
 *.rst
 *.log
+.DS_Store
+*/.DS_Store
