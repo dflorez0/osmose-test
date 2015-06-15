@@ -188,17 +188,11 @@ cip.advanced = {
     
 }
 
--- streams in processes
--- cip.processes = { cipUnit = {
---     cleaning_agent = osmose.QTStream { 'cleaning_agent_temp', 0,'tank_temp','cleaning_agent_load',3, 'water_h'},
-    
---     fresh_water = osmose.QTStream { 'source_temp', 0,'tank_temp','fresh_water_load', 3,'water_h'},
-    
---     discharge = osmose.QTStream { 'return_temp','discharge_load','max_temp', 0, 3, 'water_h'},
---   }
--- }
 
-cip:addUnit("CipUnit", {type = 'Process', addToProblem='j1', Impact2="impactJob"}) --
+--cip:addUnit("CipUnit", {type = 'Process', addToProblem='j1', Impact2="impactJob"}) --
+
+cip:addUnit("CipUnit", {type = 'Process', addToProblem='j1'})
+cip["CipUnit"]:addImpact({spoldId=spold1, type='r', multiplier=10000, postLCIA=true})
 
 cip["CipUnit"]:addStreams({  
   cleaning_agent = qt { 'cleaning_agent_temp', 0,'tank_temp','cleaning_agent_load',3, 'water_h'},
