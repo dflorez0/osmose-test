@@ -30,14 +30,10 @@ local your_conditions =  [[
     AND columnC IS NOT NULL
 ]]
 
--- ##############################################
--- ############### LOAD MODEL ###################
--- ##############################################
-
 local loadedData = project:loadData({
   dbName = 'yourdb', 
   dbUser = 'yourusername', 
---   passwd = 'yourpassword',                -- has to be provided if localhost and port number are provided
+--   dbPasswd = 'yourpassword',                -- has to be provided if localhost and port number are provided
   dbTable = 'table_to_read', 
 --   dbHost = 'localhost',                   -- default is localhost (db is running on your machine)
 --   dbPort = 5432,                          -- enter your port number here (default is 5432)
@@ -46,6 +42,10 @@ local loadedData = project:loadData({
 --   sortColumns = true,                        -- if this flag is set to true the column titles will be the first lua table key and the primary key will be the second (required e.g. for R)
 
 })
+
+-- ##############################################
+-- ############### LOAD MODEL ###################
+-- ##############################################
 
 project:loadClusters(project.clusters)
 
@@ -64,16 +64,22 @@ project:periode(1):time(1)
 
 -- project:solve({graph=false, clusters={'e1','e2'}} )
 
+-- ##############################################
+-- ############### WRITE DATA ###################
+-- ##############################################
+
 -- the luatable has to be of format
 -- "value = luatable[ID][columnA]" or
--- "value = luatable[ID]" (still the desired column name has to be passed: columns = {'columnA'},
-project:writeData({luatable = loadedData, 
+-- "value = luatable[ID]" (in this case the desired column name has to be passed separately: columns = {'columnA'})
+project:writeData({--
+  luatable = loadedData, 
   dbName = 'yourdb', 
   dbUser = 'yourusername', 
---   passwd = 'yourpassword',                -- has to be provided if localhost and port number are provided
-  dbTable = 'table_to_read', 
+--   dbPasswd = 'yourpassword',                -- has to be provided if localhost and port number are provided
+  dbTable = 'table_to_write', 
 --   dbHost = 'localhost',                   -- default is localhost (db is running on your machine)
 --   dbPort = 5432,                          -- enter your port number here (default is 5432)
   rowID = 'ID', 
-  columns = {'columnA', 'columnB'},
+--   columns = {'columnA', 'columnB'},          -- if not specified all keys of nested tables will be used as columns
+--   overwrite = true,                     -- specify if db table shall be overwritten (default is false)
 })

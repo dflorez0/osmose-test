@@ -29,44 +29,61 @@ project.operationalCosts = {cost_elec_in = 17.19, cost_elec_out = 16.9, op_time=
 local dataColumns = [[
    egid,
    hauteur,
-   niveaux_ho,
-   niveaux_ss
---    egid,
---    design_demand,
---    supply_temp_heat,
---    return_temp_heat,
+   niveaux_ho
+--    niveaux_ss,
+--    log_total,
+   destinatio
 ]]
 
 local conditions =  [[
-   facade_surface_totale <> 0
-   AND aver_irrad IS NOT NULL
+    destinatio='Mairie' OR destinatio='Poste' OR destinatio='Gare'
 ]]
+--    facade_surface_totale <> 0
+--    AND aver_irrad IS NOT NULL
 
 -- ##############################################
 -- ############### LOAD MODEL ###################
 -- ##############################################
 
-local buildingData = project:loadData({dbName = 'geneva', dbUser = 'nsc', dbTable = 'usr_nsc_energy_cadaster', dataHeader = dataColumns , conditions = conditions})
+local buildingData = project:loadData({
+  dbName = 'geneva', 
+  dbUser = 'nsc',
+--   passwd = 'yourpassword',                -- has to be provided if localhost and port number are provided
+  dbTable = 'usr_nsc_energy_cadaster',
+--   dbHost = 'localhost',                   -- default is localhost (db is running on your machine)
+--   dbPort = 5432,                          -- enter your port number here (default is 5432)
+  dataHeader = dataColumns,
+  conditions = conditions,
+----   sortColumns = true,
+})
+ local buildingData = 
+ {'gabe14','abad',26}
+-- {hauteur='gabe14',niveaux_ho='abad',destinatio=26}
+-- {
+-- [1] = {hauteur='gabe14',niveaux_ho='abad',destinatio=26},
+-- [2] = {hauteur='gaea54',niveaux_ho='ybig',destinatio=8},
+-- [3] = {hauteur='gaea54',niveaux_ho=26,destinatio=65},
+-- }
 
-for k,v in pairs(buildingData) do
-  print(k)
-  for k,v in pairs(v) do
-    print(k,v)
-  end
-end
+--for k,v in pairs(buildingData) do
+--  print(k)
+--  for k,v in pairs(v) do
+--    print(k,v)
+--  end
+--end
 
-project:loadClusters(project.clusters)
+-- project:loadClusters(project.clusters)
 
 --project:load(
 --	{building = "_examples/AMI_ET", withData = buildingData}  --, with = 'data/MultiTime_test.csv'}
 --)
-for ID,data in pairs(buildingData) do
-   project:load(
-           {building = "_examples/AMI_ET", withData = {[ID]=data}}  --, with = 'MPTdata/' .. ID .. '.csv'}
-   )
-end
+--for ID,data in pairs(buildingData) do
+--   project:load(
+--           {building = "_examples/AMI_ET", withData = {[ID]=data}}  --, with = 'MPTdata/' .. ID .. '.csv'}
+--   )
+--end
 
-project:periode(1):time(1)
+-- project:periode(1):time(1)
 --project:periode(2):time(2)
 
 -- local oneRun = osmose.Eiampl(project)
@@ -74,6 +91,18 @@ project:periode(1):time(1)
 -- osmose.Glpk(oneRun)
 
 -- osmose.Graph(oneRun)
--- osmose.Graph(oneRun, 'png')
 
-project:solve({graph=false, clusters={'e1','e2'}} )
+-- project:solve({graph=false, clusters={'e1','e2'}} )
+
+project:writeData({
+  luatable = buildingData, 
+  dbName = 'geneva', 
+  dbUser = 'nsc', 
+--   passwd = 'yourpassword',                -- has to be provided if localhost and port number are provided
+  dbTable = 'test', 
+--   dbHost = 'localhost',                   -- default is localhost (db is running on your machine)
+--   dbPort = 5432,                          -- enter your port number here (default is 5432)
+  rowID = 'egid', 
+  columns = {'hauteur'}
+--   columns = {'hauteur', 'niveaux_ho', 'destinatio'}
+})
