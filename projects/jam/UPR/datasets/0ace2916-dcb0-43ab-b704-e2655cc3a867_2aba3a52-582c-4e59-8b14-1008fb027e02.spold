@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <childActivityDataset>
+    <activityDescription>
+      <activity id="0ace2916-dcb0-43ab-b704-e2655cc3a867" activityNameId="bc07aa56-8f01-45dc-88f0-10530f396f7f" parentActivityId="e7306d35-a009-4477-b53b-554c4854aa4c" inheritanceDepth="-1" type="1" specialActivityType="0">
+        <activityName xml:lang="en">cement production, pozzolana and fly ash 5-15%, US only</activityName>
+        <synonym xml:lang="en">I (PM)</synonym>
+        <synonym xml:lang="en">pozzolan-modified Portland cement</synonym>
+        <includedActivitiesStart xml:lang="en">From cradle, i.e. including all upstream activities. As source of gypsum, waste gypsum from flue gas treatment is assumed.
+ </includedActivitiesStart>
+        <includedActivitiesEnd xml:lang="en">This activity ends with the cement produced in the cement mill. The dataset does not include packaging and administration.</includedActivitiesEnd>
+        <generalComment>
+          <text xml:lang="en" index="1">The dataset describes the production of cement (I (PM)) in USA.</text>
+        </generalComment>
+        <tag>combined production</tag>
+        <tag>combined production</tag>
+      </activity>
+      <classification classificationId="36cd730c-4485-4fe9-8efe-8850f771796d">
+        <classificationSystem xml:lang="en">ISIC rev.4 ecoinvent</classificationSystem>
+        <classificationValue xml:lang="en">2394:Manufacture of cement, lime and plaster</classificationValue>
+      </classification>
+      <geography geographyId="13d387f6-7d7e-11de-9ae2-0019e336be3a">
+        <shortname xml:lang="en">US</shortname>
+      </geography>
+      <technology technologyLevel="3" />
+      <timePeriod startDate="2005-01-01" endDate="2014-12-31" isDataValidForEntirePeriod="true" />
+      <macroEconomicScenario macroEconomicScenarioId="d9f57f0a-a01f-42eb-a57b-8f18d6635801">
+        <name xml:lang="en">Business-as-Usual</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="c7ba4657-574a-402b-bba8-858e0c641d12" unitId="5b972631-34e3-4db7-a615-f6931770a0cb" amount="5.36E-11" isCalculatedAmount="true" mathematicalRelation="5.36e-11* cement" sourceId="efeb6874-be8d-49ac-b739-c64f98596010" sourceYear="2007" sourceFirstAuthor="Kellenberger D." intermediateExchangeId="c08228bd-b9ab-4278-a40b-2139980899b3" activityLinkId="cc75c5c5-503c-49be-8265-18e8ab19cb27">
+        <name xml:lang="en">cement factory</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="5.36E-11" mu="-23.65" variance="0.3" varianceWithPedigreeUncertainty="0.3092" />
+          <pedigreeMatrix reliability="2" completeness="1" temporalCorrelation="4" geographicalCorrelation="4" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of infrastructure for input/output group c.
+</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4b1a5ad0-5a9d-4f90-a77d-da09daed7dd1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="inert_filler" amount="0" isCalculatedAmount="true" mathematicalRelation="ABS(flyash)*0" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="54894ebe-5eae-4fd7-8d35-f715e15c673b" productionVolumeAmount="0" productionVolumeMathematicalRelation="APV_cement/ cement*ABS( inert_filler)">
+        <name xml:lang="en">inert filler</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">In accordance with the ecoinvent centre, the link between waste treatment and cement production shall not be established here. Therefore the inert filler value is set to zero (cut-off approach)</comment>
+        <uncertainty>
+          <normal meanValue="0" variance="0" varianceWithPedigreeUncertainty="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">assumed to have the same properties as "sand"</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">assumed to have the same properties as "sand"</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">assumed to have the same properties as "sand"</comment>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="inert_filler_price_EUR2005" amount="0.004" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">Temporary price data. Calculated as 90% of purchasers price based on: 2004 market prices are estimated to be equal to USA prices, which are given according to http://minerals.usgs.gov/minerals/pubs/commodity/sand_&amp;_gravel_construction/myb1-2007-sandc.xls, table 1, downloaded 21 April 2009. Same price for gravel and sand.</comment>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">assumed to have the same properties as "sand"</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Amount relative to produced amount of reference product</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>2</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9f77e7da-ff34-470f-af71-be4b36209120" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.045" isCalculatedAmount="true" mathematicalRelation="0.045* cement" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="dd0cbafd-b176-4ba4-860a-25a2e0663d14" activityLinkId="061b6351-4947-4064-8005-d82860b4d5fa">
+        <name xml:lang="en">gypsum, mineral</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="0.045" mu="-3" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.</comment>
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">CaSO4-2H2O, Tab 5.2, ecoinvent v2.2 report 7, part VIII</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">CaSO4-2H2O, Tab 5.2, ecoinvent v2.2 report 7, part VIII</comment>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0fe8daf3-0a02-4097-bb2a-1ef859a54ee5" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="steel" amount="0.00011" isCalculatedAmount="true" mathematicalRelation="0.00011* cement" sourceId="efeb6874-be8d-49ac-b739-c64f98596010" sourceYear="2007" sourceFirstAuthor="Kellenberger D." intermediateExchangeId="817c3650-4fed-4ef2-b9b6-404a198834e6" activityLinkId="1b3b9481-8709-4bf4-9128-d520c8b9cc1e">
+        <name xml:lang="en">steel, low-alloyed</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature value</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00011" mu="-9.12" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.005" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.005" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.005" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e2ff3215-9b97-483d-b162-f3dee652ef79" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="cement" amount="1" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="2aba3a52-582c-4e59-8b14-1008fb027e02" productionVolumeAmount="811800000" productionVolumeVariableName="APV_cement" productionVolumeMathematicalRelation="" productionVolumeSourceId="05d78044-8e55-4c61-81e6-58fc92f92789">
+        <name xml:lang="en">cement, pozzolana and fly ash 5-15%, US only</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="38f94dd1-d5aa-41b8-b182-c0c42985d9dc" variableName="cement_price_EUR2005" amount="0.0614568993079675" isDefiningValue="true" unitId="7b75baf0-cbee-45e6-bf66-af119da06553">
+          <name xml:lang="en">price</name>
+          <unitName xml:lang="en">EUR2005</unitName>
+          <comment xml:lang="en">2005 import and export prices (total trades (USD) divided by total weight (kg) in China, India, USA, Japan, Russia and Europe, major producers and consumers (http://www.cementchina.net/freport/showfre.asp?id=749) from UN Commodity Trade Statistics Database  (http://data.un.org/Explorer.aspxDatabase [Accessed 2 July 2010]). Commodity: Cement (portland, aluminious, slag or hydraulic)</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Estimated 0.9% marketshare</productionVolumeComment>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5eb62c2b-8efb-4af5-8947-ee0b0a60e57d" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" casNumber="107-21-1" amount="0.00021" isCalculatedAmount="true" mathematicalRelation="2.1e-4* cement" sourceId="efeb6874-be8d-49ac-b739-c64f98596010" sourceYear="2007" sourceFirstAuthor="Kellenberger D." intermediateExchangeId="4052f31f-cd94-4b86-b075-210914586a0f" activityLinkId="44501008-b69e-4fa4-9cc1-190ebd127ce7">
+        <name xml:lang="en">ethylene glycol</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Ancillary product for grinding</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00021" mu="-7.51" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0.387096774193548" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C2H6O2</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">C2H6O2</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0.387096774193548" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0.387096774193548" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="59d66ef3-662f-4ed9-b15a-cd65643ad9bf" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" variableName="flyash" amount="0" isCalculatedAmount="false" intermediateExchangeId="76ab0018-e176-43e0-b42c-12e82b937fef" productionVolumeAmount="0" productionVolumeMathematicalRelation="">
+        <name xml:lang="en">hard coal ash</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" isDefiningValue="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" isDefiningValue="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" isDefiningValue="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" isDefiningValue="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" isDefiningValue="true" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" isDefiningValue="true" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <productionVolumeComment xml:lang="en">Amount relative to produced amount of reference product</productionVolumeComment>
+        <classification classificationId="ee3238ec-ca7a-4ddc-af1b-e7c35957b9b6">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">Waste</classificationValue>
+        </classification>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a286c152-c755-43f1-8ba2-36e32ad9e3c9" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0.855" isCalculatedAmount="true" mathematicalRelation="0.855* cement" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="1f41586d-0d8a-4c7c-8473-dd8351bab538" activityLinkId="ace2870c-c319-4f21-87eb-5184672929df">
+        <name xml:lang="en">clinker</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">In accordance with the ecoinvent centre, the link between waste treatment and cement production shall not be established here. Therefore the inert filler value is set to zero (cut-off approach)</comment>
+        <uncertainty>
+          <lognormal meanValue="0.855" mu="-0.81" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab 3.2, part II ecoinvent v2.2 report 7</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">Tab 3.2, part II ecoinvent v2.2 report 7</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c0b39c90-d45f-40e7-999b-b48265b5919a" unitId="487df68b-4994-4027-8fdc-a4dc298257b7" amount="0" isCalculatedAmount="true" mathematicalRelation="0.100* cement*0" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="54894ebe-5eae-4fd7-8d35-f715e15c673b">
+        <name xml:lang="en">inert filler</name>
+        <unitName xml:lang="en">kg</unitName>
+        <comment xml:lang="en">0.100* cement</comment>
+        <uncertainty>
+          <normal meanValue="0" variance="0" varianceWithPedigreeUncertainty="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <property propertyId="a9358458-9724-4f03-b622-106eda248916" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">water content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">water mass/dry mass</comment>
+        </property>
+        <property propertyId="6393c14b-db78-445d-a47b-c0cb866a1b25" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, non-fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">assumed to have the same properties as "sand"</comment>
+        </property>
+        <property propertyId="c74c3729-e577-4081-b572-a283d2561a75" amount="0" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content, fossil</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">assumed to have the same properties as "sand"</comment>
+        </property>
+        <property propertyId="6d9e1462-80e3-4f10-b3f4-71febd6f1168" amount="0" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">water in wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">assumed to have the same properties as "sand"</comment>
+        </property>
+        <property propertyId="67f102e2-9cb6-4d20-aa16-bf74d8a03326" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">wet mass</name>
+          <unitName xml:lang="en">kg</unitName>
+        </property>
+        <property propertyId="3a0af1d6-04c3-41c6-a3da-92c4f61e0eaa" amount="1" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">dry mass</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">assumed to have the same properties as "sand"</comment>
+        </property>
+        <property propertyId="a301a838-7975-4d89-9e74-8eb77ad03cd1" amount="0" isDefiningValue="false" unitId="577e242a-461f-44a7-922c-d8e1c3d2bf45">
+          <name xml:lang="en">carbon content</name>
+          <unitName xml:lang="en">dimensionless</unitName>
+          <comment xml:lang="en">carbon content on a dry matter basis (reserved; not for manual entry)</comment>
+        </property>
+        <property propertyId="f2283db2-62e4-467f-b9ac-c4f45be563b4" amount="0" isDefiningValue="false" unitId="487df68b-4994-4027-8fdc-a4dc298257b7">
+          <name xml:lang="en">carbon allocation</name>
+          <unitName xml:lang="en">kg</unitName>
+          <comment xml:lang="en">carbon content per unit of product (reserved; not for manual entry)</comment>
+        </property>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="bf28145e-b5ee-411f-868e-be11633592a2" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0" isCalculatedAmount="true" mathematicalRelation="" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" productionVolumeAmount="0">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <normal meanValue="0" variance="0" varianceWithPedigreeUncertainty="0" />
+          <pedigreeMatrix reliability="1" completeness="1" temporalCorrelation="1" geographicalCorrelation="1" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="845dbe91-96f4-47b7-8f7a-1bc8838b5045" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.000144955093533795" isCalculatedAmount="true" mathematicalRelation="" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="5b0f8e12-fce2-46a8-b89c-5d43e0397307">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000144955093533795" mu="-3.3" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="bc778f71-45d9-4b13-81f3-e46c107aa65a" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00350603681814237" isCalculatedAmount="true" mathematicalRelation="" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="9a361ac8-3965-4021-adf9-4f8dae451461">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00350603681814237" mu="-3.3" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9625e674-af11-4f96-97be-1b79ea1ce70e" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00994550207175328" isCalculatedAmount="true" mathematicalRelation="" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="12b34223-4001-4a4b-a14c-c28bc55c8453">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00994550207175328" mu="-3.3" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f7d23821-ad61-4b31-ab96-a47e799077a7" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00280284427719455" isCalculatedAmount="true" mathematicalRelation="" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="cea82949-ff72-4a1b-a05d-b74646705fb8">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00280284427719455" mu="-3.3" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="cb6b7387-f9b9-4c70-8586-f17476eb8443" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0123671903608568" isCalculatedAmount="true" mathematicalRelation="" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="110a6019-9c9f-4330-8072-e044c1eddcfa">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0123671903608568" mu="-3.3" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4df1ab52-8251-4ccc-8101-3e080b98c3d6" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00299892849693778" isCalculatedAmount="true" mathematicalRelation="" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="34468557-a232-49c7-ae1a-79ee8e2eed28">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00299892849693778" mu="-3.3" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="008c8202-8d8a-4cd7-9f9d-75350c996a0b" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="9.14925041436737E-05" isCalculatedAmount="true" mathematicalRelation="" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="fe3549de-b512-4036-bf1e-72f7348312b5">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="9.14925041436737E-05" mu="-3.3" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="894cb4f6-02ee-45f4-a4ed-37b17d3dbc99" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00459093512263302" isCalculatedAmount="true" mathematicalRelation="" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="62a26c20-46cb-47e7-8140-a1dc96a69d98">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00459093512263302" mu="-3.3" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2dd445d7-7014-4ef6-bee7-20e7098c6eb5" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.0144520259195328" isCalculatedAmount="true" mathematicalRelation="" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="37334fe6-00ef-4578-a4ff-6ca5064fde53">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0144520259195328" mu="-3.3" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="47c20197-6e68-4167-9aaa-84c9b579102a" unitId="77ae64fa-7e74-4252-9c3b-889c1cd20bfc" amount="0.00280008933527198" isCalculatedAmount="true" mathematicalRelation="" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." intermediateExchangeId="759b89bd-3aa6-42ad-b767-5bb9ef5d331d" activityLinkId="4415b0f4-b2c5-40e1-a92d-fc1195c25650">
+        <name xml:lang="en">electricity, medium voltage</name>
+        <unitName xml:lang="en">kWh</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00280008933527198" mu="-3.3" variance="0.0006" varianceWithPedigreeUncertainty="0.0113" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents demand of products, electricity etc. for input/output group c.
+</comment>
+        </uncertainty>
+        <classification classificationId="39b0f0ab-1a2f-401b-9f4d-6e39400760a4">
+          <classificationSystem xml:lang="en">By-product classification</classificationSystem>
+          <classificationValue xml:lang="en">allocatable product</classificationValue>
+        </classification>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="b71187c0-44b0-42de-84db-ea9a5cd4e2db" unitId="980b811e-3905-4797-82a5-173f5568bc7e" amount="0.193" isCalculatedAmount="true" mathematicalRelation="0.193* cement" sourceId="05d78044-8e55-4c61-81e6-58fc92f92789" sourceYear="2010" sourceFirstAuthor="Boesch, M.E." elementaryExchangeId="f2d84834-d0b3-42e5-b41a-f04cc80337a4">
+        <name xml:lang="en">Heat, waste</name>
+        <unitName xml:lang="en">MJ</unitName>
+        <comment xml:lang="en">Literature Value</comment>
+        <uncertainty>
+          <lognormal meanValue="0.193" mu="-2.02" variance="0.04" varianceWithPedigreeUncertainty="0.0507" />
+          <pedigreeMatrix reliability="3" completeness="3" temporalCorrelation="4" geographicalCorrelation="3" furtherTechnologyCorrelation="1" />
+          <comment xml:lang="en">Variance of log-transformed data was taken from ecoinvent report no 1, table 10.3. Value represents others emitted to air for input/output group p.</comment>
+        </uncertainty>
+        <compartment subcompartmentId="7011f0aa-f5f9-4901-8c10-884ad8296812">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation>
+      <representativeness percent="100" systemModelId="290c1f85-4cc4-4fa1-b0c8-2cb7f4276dce">
+        <systemModelName xml:lang="en">Allocation, cut-off by classification</systemModelName>
+        <samplingProcedure xml:lang="en">Data approximates average U.S. production</samplingProcedure>
+      </representativeness>
+    </modellingAndValidation>
+    <administrativeInformation>
+      <dataEntryBy personId="a35d6e99-19d3-4784-b54a-3585ba03431c" isActiveAuthor="true" personName="Michael Elias Boesch" personEmail="michael.boesch@aveny.ch" />
+      <dataGeneratorAndPublication personId="a35d6e99-19d3-4784-b54a-3585ba03431c" personName="Michael Elias Boesch" personEmail="michael.boesch@aveny.ch" dataPublishedIn="2" publishedSourceId="05d78044-8e55-4c61-81e6-58fc92f92789" publishedSourceYear="2010" publishedSourceFirstAuthor="Boesch, M.E." isCopyrightProtected="true" accessRestrictedTo="1" />
+      <fileAttributes majorRelease="3" minorRelease="0" majorRevision="4" minorRevision="0" internalSchemaVersion="2.0.8" defaultLanguage="en" creationTimestamp="2012-06-15T16:00:52" lastEditTimestamp="2013-02-05T17:29:42" fileGenerator="EcoEditor 3.2.63.9512" fileTimestamp="2013-02-05T17:29:42" contextId="de659012-50c4-4e96-b54a-fc781bf987ab">
+        <contextName xml:lang="en">ecoinvent</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </childActivityDataset>
+</ecoSpold>

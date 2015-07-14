@@ -7,15 +7,16 @@
 --]]------------------------------------------------------
 
 
-local osmose = require 'osmose'
+local osmose = require 'lib.osmose'
 
 local project = osmose.Project('LuaJam', 'OperatingCost')
 
 project.ecoinvent = {
-        impactMethodName = 'CML 2001', -- USEtox
-        impactCategoryName = 'photochemical oxidation (summer smog)', -- human toxicity
-        name = 'EBIR', -- total
-    }
+  impactMethodName = 'USEtox', -- USEtox
+  impactCategoryName = 'human toxicity', -- human toxicity
+  name = 'total', -- total
+  folder = 'projects/jam' -- path to the ecoinvent folder
+}
 
 
 project:load(
@@ -36,5 +37,6 @@ project.operationalCosts={cost_elec_in=2, cost_elec_out=5, op_time=8600}
 
 project:solve() --{graph=false}
 
-project:compute('jam_postcompute.lua')
+print('IMPACT2:', project:getUnit('CipUnit').Impact2)
 
+print('POST IMPACT2:', project:getUnit('CipUnit').PostImpact)

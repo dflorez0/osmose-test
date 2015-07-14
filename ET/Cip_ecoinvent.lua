@@ -4,9 +4,8 @@
   # Cip - Cleaning In Place Tank
 
 --]]------------------------------------------------------
---local file ='projects/jam/datasets/030d9f2e-3aaa-427b-8bee-7304dedcf057_79b9ceea-f11c-4d24-9f30-057ebb8a34ba.spold'
---local file ='projects/jam/datasets/73594da4-b4aa-4d2a-a8a3-82a7d5ca33c7_515dd20c-c5ae-4beb-a5f8-0b67918c28d6.spold'
-local file ='projects/jam/datasets/b3387b89-ff27-4848-9161-9ef37a479025_e88c3a19-945a-4396-a107-37e3876b2f0a.spold'
+
+local spold1 ='b3387b89-ff27-4848-9161-9ef37a479025_e88c3a19-945a-4396-a107-37e3876b2f0a'
 
 
 local osmose = require 'osmose'
@@ -159,8 +158,8 @@ cip.outputs = { -- doc
 
   function_discharge_load = {job = function() return discharged_raw_water_flow() / 3.6 * water_cp * (return_temp - max_temp) end},
 
- impactJob = {job = function()
-                        return 10000 * getImpactIndicator(file)
+  impactJob = {job = function()
+                        return 10000 * getImpactIndicator(spold1,'r')
                       end}
                     
   }
@@ -189,17 +188,11 @@ cip.advanced = {
     
 }
 
--- streams in processes
--- cip.processes = { cipUnit = {
---     cleaning_agent = osmose.QTStream { 'cleaning_agent_temp', 0,'tank_temp','cleaning_agent_load',3, 'water_h'},
-    
---     fresh_water = osmose.QTStream { 'source_temp', 0,'tank_temp','fresh_water_load', 3,'water_h'},
-    
---     discharge = osmose.QTStream { 'return_temp','discharge_load','max_temp', 0, 3, 'water_h'},
---   }
--- }
 
-cip:addUnit("CipUnit", {type = 'Process', addToProblem='j1', Impact2="impactJob"}) --
+--cip:addUnit("CipUnit", {type = 'Process', addToProblem='j1', Impact2="impactJob"}) --
+
+cip:addUnit("CipUnit", {type = 'Process', addToProblem='j1'})
+cip["CipUnit"]:addImpact({spoldId=spold1, type='r', multiplier=10000, postLCIA=true})
 
 cip["CipUnit"]:addStreams({  
   cleaning_agent = qt { 'cleaning_agent_temp', 0,'tank_temp','cleaning_agent_load',3, 'water_h'},
