@@ -7,7 +7,7 @@ local lfs = require('lfs')
 
 local osmose = require 'lib.osmose'
 
-local project = osmose.Project('UMSOL', 'OperatingCost')
+local project = osmose.Project('monitorCompTime', 'OperatingCost')
 
 -- ##############################################
 -- ############### LOAD DATA ####################
