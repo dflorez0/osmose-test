@@ -19,6 +19,9 @@ project.ecoinvent = {
   folder = 'test/fixtures' -- path to the ecoinvent folder
 }
 
+project.options = {graph = false} --{format = 'jpg', spaghetti = false}}
+project.options.doLCA = false
+
 project:load(
 	{P_MOO = "ET.Test-Dakota.S_Problem_MOO"}
 )
@@ -35,13 +38,13 @@ project:optimize {
 	variable_domain = 'continuous_design',
 	variables       ={x1={lower_bound='0', upper_bound='1.0', initial='0.5'},
                     x2={lower_bound='0', upper_bound='1.0', initial='0.5'}},
-	method          ={  name = 'moga', 
+	method          = {  name = 'moga', 
                       fitness_type='domination_count',
                       initialization_type='unique_random',
                       crossover_type='shuffle_random',
-                      max_iterations=30, 
-                      final_solutions=5,
-                      population_size=10,
+                      max_iterations=1000, 
+                      final_solutions=100,
+                      population_size=30,
                       crossover_rate=0.1,
                       mutation_rate=0.1,}, --	mutation_type		= 'bit_random'
 	graphics=true
