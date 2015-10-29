@@ -16,6 +16,7 @@ lib.inputs = { }
 -- ## Result (isVIT = 2)
 lib.outputs = {  }
 
+-- for further explanations see the comments in osmose.Model
 lib:addEquations{
   Distance_Constraint = { statement = "subject to Distance_Constraint{t in Time}: \n\t Total_Distance[t] = sum {u in Units} Units_Distance[u,t];", param = {}, addToProblem=1, type ='ampl'} 
 }

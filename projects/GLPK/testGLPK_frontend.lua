@@ -11,7 +11,7 @@ local project = osmose.Project('Test_Osmose2GLPK', 'OperatingCost', 'testing')
 project.operationalCosts = {cost_elec_in = 17.19, cost_elec_out = 16.9, op_time=8000}
 
 project:load( 
-  {utilities = 'TestGLPK/generic_utilities_with_addParameterData'},
+  {utilities = 'TestGLPK/generic_utilities'},
   {process = 'Cip'}
 )
 	
