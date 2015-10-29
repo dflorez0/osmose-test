@@ -182,7 +182,8 @@ cip.advanced = {
 -- }
 
 
-cip:addUnit("CipUnit", {type = 'Process', addToProblem='j1'})
+cip:addUnit("CipUnit", {type = 'Process', addToProblem=1})
+-- cip:addUnit("CipUnit", {type = 'Process', addToProblem='j1'})
 
 cip["CipUnit"]:addStreams({  
   cleaning_agent = qt { 'cleaning_agent_temp', 0,'tank_temp','cleaning_agent_load',3, 'water_h'},
