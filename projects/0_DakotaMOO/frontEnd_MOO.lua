@@ -19,6 +19,9 @@ project.ecoinvent = {
   folder = 'test/fixtures' -- path to the ecoinvent folder
 }
 
+project.options = {graph = false} --{format = 'jpg', spaghetti = false}}
+project.options.doLCA = false
+
 project:load(
 	{P_MOO = "ET.Test-Dakota.S_Problem_MOO"}
 )
@@ -29,19 +32,18 @@ project:optimize {
 	computes     ={'S_problem_MOO_compute'},
   postcompute  ={'S_problem_MOO_postcompute'},
 	objectives_size =2,
---  continuous_variables= { x1={lower_bound='0', upper_bound='1.0', initial='0.4'},
---                          x2={lower_bound='0', upper_bound='1.0', initial='0.5'}},
---  integer_variables = { y1 = {0,1}, y2 = {0,1}, y3 = {2,5,8}},
-	variable_domain = 'continuous_design',
-	variables       ={x1={lower_bound='0', upper_bound='1.0', initial='0.5'},
-                    x2={lower_bound='0', upper_bound='1.0', initial='0.5'}},
-	method          ={  name = 'moga', 
+  continuous_variables= { x1={lower_bound='0', upper_bound='1.0', initial='0.4'},
+                          x2={lower_bound='0', upper_bound='1.0', initial='0.5'}},
+  discrete_variables = {  y1 = {type = 'integer', values = {0,1}},
+                          y2 = {type = 'string',  values = {'a','b'}},
+                          y3 = {type = 'real',    values = {2.2,5.4,8}}},
+	method          = {  name = 'moga', 
                       fitness_type='domination_count',
                       initialization_type='unique_random',
                       crossover_type='shuffle_random',
-                      max_iterations=30, 
-                      final_solutions=5,
-                      population_size=10,
+                      max_iterations=1000, 
+                      final_solutions=100,
+                      population_size=30,
                       crossover_rate=0.1,
                       mutation_rate=0.1,}, --	mutation_type		= 'bit_random'
 	graphics=true
