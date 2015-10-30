@@ -33,7 +33,7 @@ project:loadClusters(project.clusters)
 -- 2nd option (required for MPT or Locations - see regarding examples):
 for ID,data in pairs(buildingData) do
  project:load(
-         {['building'..ID] = "_examples/AMI_ET", withData = {[ID]=data}}  --, with = 'MPTdata/' .. ID .. '.csv'}
+         {['building'..ID] = "TestAMI/AMI_ET", withData = {[ID]=data}}  --, with = 'MPTdata/' .. ID .. '.csv'}
 --            {building = "_examples/AMI_ET", withData = {[ID]=data}}  --, with = 'MPTdata/' .. ID .. '.csv'}
  )
 end

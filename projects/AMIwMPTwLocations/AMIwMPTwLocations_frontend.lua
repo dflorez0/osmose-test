@@ -44,7 +44,7 @@ project:loadClusters(project.clusters)
 
 for ID,data in pairs(buildingData) do
   project:load(
-    {['building'..ID] = "_examples/AMI_ET", locations = {ID}, withData = {[ID]=data}, with = 'MPTdata/' .. ID .. '.csv'}
+    {['building'..ID] = "TestAMI/AMI_ET", locations = {ID}, withData = {[ID]=data}, with = 'MPTdata/' .. ID .. '.csv'}
 --            {['building'..ID] = "_examples/AMI_ET", locations = {buildingData[ID]['location']}, withData = {[ID]=data}, with = 'MPTdata/' .. ID .. '.csv'}
    )
 end
