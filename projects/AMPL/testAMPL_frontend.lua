@@ -10,6 +10,14 @@ local osmose = require 'lib.osmose'
 
 local project = osmose.Project('Test_AMPL', 'OperatingCost', 'testing')
 
+project.options = {}
+project.options.mathProg = {}
+-- specify if you want to use AMPL
+project.options.mathProg.language = 'ampl'
+-- specify the mod files you want to use
+project.options.mathProg.modFiles = {'eiampl_p', 'costing_p', 'heat_cascade_base_glpsol_p', 'heat_cascade_no_restrictions_p', 'mass_p', 'resource_p', 'mass_quality_p', 'resource_quality_p'}
+project.options.mathProg.dispFiles = {'costing_postSolve_p', 'heat_cascade_base_postSolve_p', 'mass_postSolve_p', 'resource_postSolve_p', 'mass_quality_postSolve_p', 'resource_quality_postSolve_p'}
+
 project.operationalCosts = {cost_elec_in = 17.19, cost_elec_out = 16.9, op_time=8000}
 
 project:load( 
@@ -19,15 +27,5 @@ project:load(
 	
 project:eiampl()
 	
-local options = {}
-options.mathProg = {}
--- specify if you want to use AMPL
-options.mathProg.language = 'ampl'
--- specify the mod files you want to use
-options.mathProg.modFiles = {'eiampl_p', 'costing_p', 'heat_cascade_base_glpsol_p', 'heat_cascade_no_restrictions_p', 'mass_p', 'resource_p', 'mass_quality_p', 'resource_quality_p'}
-options.mathProg.dispFiles = {'costing_postSolve_p', 'heat_cascade_base_postSolve_p', 'mass_postSolve_p', 'resource_postSolve_p', 'mass_quality_postSolve_p', 'resource_quality_postSolve_p'}
-project:glpk(options)
 
-osmose.PostPrint(project)
-
--- project:solve({graph={format = 'jpg'}}) 
+project:solve() 

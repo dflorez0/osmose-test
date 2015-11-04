@@ -7,7 +7,9 @@ local lfs = require('lfs')
 
 local osmose = require 'lib.osmose'
 
-local project = osmose.Project('AMIwMPT', 'OperatingCost')
+local project = osmose.Project('AMIwMPT', 'OperatingCost', 'testing')
+project.options = {}
+project.options.doLCA = false
 
 -- operationalCosts to be used only when objective is YearlyOperatingCost
 -- project.operationalCosts = {cost_elec_in = 17.19, cost_elec_out = 16.9, op_time= 2000.0}
@@ -30,16 +32,11 @@ project:loadClusters(project.clusters)
 --)
 for ID,data in pairs(buildingData) do
    project:load(
-           {['building'..ID] = "_examples/AMI_ET", withData = {[ID]=data}, with = 'MPTdata/' .. ID .. '.csv'}
+           {['building'..ID] = "TestAMI/AMI_ET", withData = {[ID]=data}, with = 'MPTdata/' .. ID .. '.csv'}
    )
 end
 
 project:periode(1):time(3)
 --project:periode(2):time(2)
 
-local oneRun = osmose.Eiampl(project)
-
-osmose.Glpk(oneRun)
-
-osmose.Graph(oneRun)
--- osmose.Graph(oneRun, 'png')
+project:solve()

@@ -79,7 +79,7 @@ local buildingData = project:loadData({
 --)
 --for ID,data in pairs(buildingData) do
 --   project:load(
---           {building = "_examples/AMI_ET", withData = {[ID]=data}}  --, with = 'MPTdata/' .. ID .. '.csv'}
+--           {building = "TestAMI/AMI_ET", withData = {[ID]=data}}  --, with = 'MPTdata/' .. ID .. '.csv'}
 --   )
 --end
 

@@ -7,6 +7,8 @@
 local osmose = require 'lib.osmose'
 
 local project = osmose.Project('Test_Osmose2GLPK', 'OperatingCost', 'testing')
+project.options = {}
+project.options.doLCA = false
 
 project.operationalCosts = {cost_elec_in = 17.19, cost_elec_out = 16.9, op_time=8000}
 
@@ -15,7 +17,7 @@ project:load(
   {process = 'Cip'}
 )
 	
-project:solve({graph={format = 'jpg'}}) 
+project:solve() 
 
 -- check now the eiampl.run file (the lines before the objective is defined) 
 -- and the eiampldata.in file (last lines) to see the added variables/parameters  
