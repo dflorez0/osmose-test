@@ -35,7 +35,7 @@ project:optimize {
   continuous_variables= { x1={lower_bound='0', upper_bound='1.0', initial='0.4'},
                           x2={lower_bound='0', upper_bound='1.0', initial='0.5'}},
   discrete_variables = {  y1 = {type = 'integer', values = {0,1}},
-                          y2 = {type = 'string',  values = {'a','b'}},
+                          y2 = {type = 'string',  values = {'a','b'}},  -- ATTENTION: values must be in ascending order!
                           y3 = {type = 'real',    values = {2.2,5.4,8}}},
 	method          = {  name = 'moga', 
                       fitness_type='domination_count',
