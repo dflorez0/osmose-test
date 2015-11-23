@@ -45,6 +45,12 @@ project:optimize {
                       final_solutions=100,
                       population_size=30,
                       crossover_rate=0.1,
-                      mutation_rate=0.1,}, --	mutation_type		= 'bit_random'
+                      mutation_rate=0.1,
+					  output = 'verbose'}, --	mutation_type		= 'bit_random'
+						--debug	Level 5 of 5 - maximum
+						--verbose		Level 4 of 5 - more than normal
+						--normal		Level 3 of 5 - default
+						--quiet			Level 2 of 5 - less than normal
+						--silent		Level 1 of 5 - minimum
 	graphics=true
 }
