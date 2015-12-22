@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>SANKEY</title>
+
+<style>
+<!-- ********************* CSS Styling **************************-->
+html,body{min-height:100%;}
+#chart { height: 500px;}
+
+# concern with the formatting of the mouse
+# For more cursers	: http://www.echoecho.com/csscursors.htm
+# fill-opacity 		: mostly opaque
+# crispEdges		: Keep the edges sharp
+# "rect" refers to node.append("rect")
+# "text" refers to node.append("text") for each node
+# The mouse is told to essentially ignore the text in favour of anything that’s under it.
+# text-shadow		: 0 1px 0 #fff 			---> a slight shadow is applied for readability 
+# text-shadow		: 2px 2px 8px #FF0000 	---> blur effect
+# fill				: none; no fill for the links
+# stroke			: #000; color the edges black http://html-color-codes.com/
+# stroke-opacity	: .2; edges almost transparent
+# stroke-opacity	: .5; when the mouse goes over it
+body {
+	font-family:arial, sans-serif;
+	font-size:62.5%;
+	}
+/*------------------------------------------------------------*/
+/*------------ Customization of Rectangle Nodes --------------*/
+/*------------------------------------------------------------*/
+.node rect {
+	cursor			: move; 		/* Cursor changes its form */
+	fill-opacity	: .6; 			/* Opacity of rectangle node color. Recall colors are defined in json-like graph */
+	shape-rendering	: crispEdges; 
+}
+.node text {
+	pointer-events	: none;
+	text-shadow		: none !important;
+}
+/*------------------------------------------------------------*/
+/*----Changing style of node while hovering over it ----------*/
+/*------------------------------------------------------------*/
+.node rect:hover {
+	fill-opacity	: 0.8;
+}
+/*------------------------------------------------------------*/
+/*------------------ Customization of Links ------------------*/
+/*------------------------------------------------------------*/
+.link { 
+	fill			: none;
+	stroke			: #336666;
+	stroke-opacity	: .5;
+}
+/*------------------------------------------------------------*/
+/*------ Changing style of link while hovering over it -------*/
+/*------------------------------------------------------------*/
+.link:hover {
+	stroke-opacity	: 0.8 !important;
+}
+/*------------------------------------------------------------*/
+</style>
+
+
+<body onload = "resize()">
+<h1 style = "font-family:Sans-serif;font-size:300%"> >Sankey diagram for PFE3_mpt_onerun and period 1 and time 1 in cluster Clu</h1>
+	<div id = "chart"></div>
+	<!-- ********************* Javascript Functionality **************************-->
+	<script src = "d3.min.js"></script>
+	<script src = "Sankey.js"></script>
+	<script>
+		var aspect 	=  600/300;
+		var margin 	=  {top: 5, right: 1, bottom: 6, left: 1},
+		width 		= window.innerWidth,
+		height 		= window.innerHeight - margin.top  - margin.bottom;
+		
+		//first the height is calculated with respect of the available width
+		height = Math.round(width/aspect) - margin.top  - margin.bottom;
+		//then the margin is applied to width.
+		width = width - margin.left - margin.right;
+
+		var formatNumber 	= d3.format(",.2f"), // two decimal places with comma for thousands
+			format 			= function(d) { return formatNumber(d); }
+			color 			= d3.scale.category10(); // https://github.com/mbostock/d3/wiki/Ordinal-Scales#category10
+		// append the svg canvas to the page
+		var svg = d3.select("#chart")
+			.style("width",(window.innerWidth-25)+"px") //initial chart size in function of window size
+			.style("height",(window.innerHeight-25)+"px")
+			.append("svg")
+			.attr("id", "svgsankey")
+			.attr("preserveAspectRatio", "xMinYMin")
+			.attr("viewBox", "0 0 "+width+" "+height)
+			.attr("width",width)
+			.attr("height",height)
+			.append("g")
+			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+			d3.select(window).on("resize", function resize() { 
+				var newWidth 	= window.innerWidth-25;
+				var newHeight 	= Math.round(newWidth/aspect) - margin.top  - margin.bottom;
+				d3.select("#chart").style("width",(window.innerWidth - 25)+"px").style("height",(window.innerHeight - 25)+"px");
+				d3.select("#svgsankey").attr("width",newWidth).attr("height",newHeight);
+			}); 
+		// Set the Sankey diagram properties
+		var sankey 	= d3.sankey()
+			.nodeWidth(10) 			// sets the pixel width of all nodes (heights are variable, widths are fixed)
+			.nodePadding(10)  		// sets the minimum vertical pixel spacing between nodes
+			.size([width, height]); // sets the width and height of the diagram in pixels
+		var path 	= sankey.link();
+		
+		// load the data
+		
+		d3.json("sankey_input_p1_t1_Clu.json", function(graph) {
+		
+		// for each link define "value" as equal to "realValue" this is needed in case of scaling the links thickness
+		graph.links.forEach(function(link,index) {link.value = link.realValue;})
+		// initializes links source and target. A lookup of node name must be performed for each links node
+		graph.links.forEach(function (l,i) {
+			// bounds the links source with the node object having the same name
+			l.source = graph.nodes.filter(function(n) { //filter nodes with the same name
+						return n.name === l.source;
+						})[0]; //get the first filtered element since the name is sensed to be unique
+			// bounds the links target with the node object having the same name
+			l.target =  graph.nodes.filter(function(n) { // filter nodes with the same name
+						return n.name === l.target;
+						})[0]; // get the first foltered element since the name is sensed to be unique
+			});
+		
+		sankey
+			.nodes(graph.nodes)
+			.links(graph.links)
+			.layout(32);
+		// ----------------------------------------------------------------------------
+		// add in the links
+		// ----------------------------------------------------------------------------
+		var link = svg.append("g").selectAll(".link")
+				.data(graph.links)
+				.enter().append("path")
+				//returns a tag class of the form "link layer<layerId>"
+				.attr("class",function(d) { return "link" + " " + "layer" + d.layerId; })
+				.attr("d", path)
+				.attr("id", function(d,i){
+					d.id = i;
+					return "link"+i;
+					})
+				.style("stroke-width", function(d) { return Math.max(1, d.dy); })
+				.style("stroke", function(d) {return d.source.color = color(d.layerId)}) //type.replace(/ .*/, "")
+				//.style("stroke",function(d) { return d.layerColor; }) //setting color of link based on its layer color
+				.sort(function(a, b) { return b.dy - a.dy; });
+		// ----------------------------------------------------------------------------
+		// add the link titles showing the real flow Value + unit + layer
+		// ----------------------------------------------------------------------------
+			link.append("title")
+				.text(function(d) {
+					return d.source.name + "  ---> " + 
+						d.target.name + "\n" + format(d.realValue) + " " + d.layerUnit + " " + d.layerId; });
+		// ----------------------------------------------------------------------------
+		// add in the nodes
+		// ----------------------------------------------------------------------------
+		var node = svg.append("g").selectAll(".node")
+				.data(graph.nodes)
+				.enter().append("g")
+				.attr("class", "node")
+				.attr("transform", function(d) { 
+					return "translate(" + d.x + "," + d.y + ")"; })
+				.call(d3.behavior.drag()
+				.origin(function(d) { return d; })
+				.on("dragstart", function() { this.parentNode.appendChild(this); })
+				.on("drag", dragmove));
+		// ----------------------------------------------------------------------------
+		// add the rectangles for the nodes
+		// ----------------------------------------------------------------------------
+			node.append("rect")
+				.attr("height", function(d) { return d.dy; })
+				.attr("width", sankey.nodeWidth())
+				.style("fill", function(d) { 
+					return d.color = color(d.name.replace(/ .*/, "")); }) 
+				.style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
+				.append("title")
+				.text(function(d) { return d.name+ "\n" + format(d.value); });
+		// ----------------------------------------------------------------------------
+		// add in the title for the nodes
+		// ----------------------------------------------------------------------------
+			node.append("text")
+				.attr("x", -6)
+				.attr("y", function(d) { return d.dy / 2; })
+				.attr("dy", ".35em")
+				.attr("text-anchor", "end")
+				.attr("transform", null)
+				.style("font-size","0.9rem")
+				.text(function(d) { return d.name; })
+				.filter(function(d) { return d.x < width / 2; })
+				.attr("x", 6 + sankey.nodeWidth())
+				.attr("text-anchor", "start");
+		// ----------------------------------------------------------------------------
+		// the function for moving the nodes vertically and horizontally
+		// ----------------------------------------------------------------------------
+		function dragmove(d) {
+			d3.select(this).attr("transform", 
+				"translate(" + ( d.x = Math.max(0, Math.min(width - d.dx, d3.event.x))) + "," 						 
+							 + ( d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) + ")");
+			sankey.relayout();
+			link.attr("d", path);
+		};
+});
+	</script>
+</body>
+</html>

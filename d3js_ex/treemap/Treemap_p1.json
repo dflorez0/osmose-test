@@ -1,0 +1,3625 @@
+{
+  "children": [ {
+    "children": [ {
+      "children": [ {
+        "children": [ {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "b_conv_ng",
+                "size": 100
+              }, {
+                "name": "b_rad_ng",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "sng_req",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "b_sng"
+          } ],
+          "name": "boilsng"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "q_0_203",
+                "size": 100
+              }, {
+                "name": "q_0_201",
+                "size": 100
+              }, {
+                "name": "q_0_202",
+                "size": 100
+              }, {
+                "name": "q_0_205",
+                "size": 100
+              }, {
+                "name": "q_0_204",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "elec_req_dry",
+                "size": 100
+              }, {
+                "name": "wood_pro_std",
+                "size": 100
+              }, {
+                "name": "wood_req",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "steamdry"
+          } ],
+          "name": "stemdry"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "wood_resource",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "wood"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "28500",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "28500",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "MeOH_sold",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "MeOHs"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "29527.687969636",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "31554.605777856",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "electricity_ucte_resource",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "electricity_ucte"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "43300",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "43300",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "FT_sold",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "FTs"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "electricity_sold",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "electricity_sell"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "petrol_resource",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "petrol_res"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "BG_sold",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "Biogas"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "diesel_resource",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "diesel"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "37355.493141564",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "37355.493141564",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "ng_resource",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "NG"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "50000",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "50000",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "oil_resource",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "fuel_oil"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "206366.39315069",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "206366.39315069",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "iwood_resource",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "wood_import"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "28050",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "28050",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "DME_sold",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "DMEs"
+          } ],
+          "name": "resource"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "byproducts",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "Scierie_Byproducts"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Heat_Chauffage",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Elec_Consumpt",
+                "size": 100
+              }, {
+                "name": "Grumes",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "Scierie"
+          } ],
+          "name": "sawmill"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "mobility_service",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "mobility"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "electricity_service",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "electricity"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "waterhot1",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "hotw"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "hothload1",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "heat"
+          } ],
+          "name": "service"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "3.517633981",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "3.517633981",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "mobility_supplied",
+                "size": 100
+              }, {
+                "name": "elec_req_car",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "ec_car"
+          } ],
+          "name": "elC"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "ftdiesel_consumed",
+                "size": 100
+              }, {
+                "name": "mobility_supplied",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "ftdc_car"
+          } ],
+          "name": "ftC"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "4.21170855",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "4.21170855",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "b_conv_oil",
+                "size": 100
+              }, {
+                "name": "b_rad_oil",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "oil_req",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "b_oil"
+          } ],
+          "name": "boiloil"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "q_gt105",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "elec_req_gt",
+                "size": 100
+              }, {
+                "name": "biogas_req_gt",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "gt_bm"
+          } ],
+          "name": "gtbio"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "6.973527269",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "6.973527269",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Hot_stream2",
+                "size": 100
+              }, {
+                "name": "Hot_stream3",
+                "size": 100
+              }, {
+                "name": "Hot_stream1",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "elec_prod",
+                "size": 100
+              }, {
+                "name": "wwt_in",
+                "size": 100
+              }, {
+                "name": "dry_sludge_prod",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "ww_t"
+          } ],
+          "name": "wwtp"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "q_0_102",
+                "size": 100
+              }, {
+                "name": "q_0_101",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "wood_pro_ard",
+                "size": 100
+              }, {
+                "name": "wood_req",
+                "size": 100
+              }, {
+                "name": "elec_req_dry",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "airdry"
+          } ],
+          "name": "airdry"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "dme_cooling",
+                "size": 100
+              }, {
+                "name": "dme_steam",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "wood_req_dme",
+                "size": 100
+              }, {
+                "name": "dme_out",
+                "size": 100
+              }, {
+                "name": "elec_req_dme",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "dmeu"
+          } ],
+          "name": "dme"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "meoh_cooling1",
+                "size": 100
+              }, {
+                "name": "meoh_drying",
+                "size": 100
+              }, {
+                "name": "meoh_cooling2",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "meoh_out",
+                "size": 100
+              }, {
+                "name": "wood_req_meoh",
+                "size": 100
+              }, {
+                "name": "elec_req_meoh",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "meohu"
+          } ],
+          "name": "meoh"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "cooling",
+                "size": 100
+              }, {
+                "name": "heating",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "elec_req",
+                "size": 100
+              }, {
+                "name": "wwt",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "laundry"
+          } ],
+          "name": "laundry"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "q_en101b",
+                "size": 100
+              }, {
+                "name": "q_en102",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "elec_req_engine",
+                "size": 100
+              }, {
+                "name": "sng_req_engine",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "sng_engine"
+          } ],
+          "name": "engsng"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "b_conv_bio",
+                "size": 100
+              }, {
+                "name": "b_rad_bio",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "wood_req",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "b_bio"
+          } ],
+          "name": "boilbio"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "desuph",
+                "size": 100
+              }, {
+                "name": "evap",
+                "size": 100
+              }, {
+                "name": "cond",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "elec_req",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "ht_heat_pump"
+          } ],
+          "name": "hp_high"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "17.199862401",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "17.199862401",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "diesel_consumed",
+                "size": 100
+              }, {
+                "name": "mobility_supplied",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "dc_car"
+          } ],
+          "name": "dieselC"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1.164421815",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1.164421815",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "dhn_cridor",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "msw_treat",
+                "size": 100
+              }, {
+                "name": "elec_cogen",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "mswi"
+          } ],
+          "name": "mswi"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "heat_req_pur",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "ow_to_treat_pur",
+                "size": 100
+              }, {
+                "name": "biogas_prod_pur",
+                "size": 100
+              }, {
+                "name": "elec_req_pur",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "biometh_pur"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "heat_req_en",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "biogas_prod_en",
+                "size": 100
+              }, {
+                "name": "ow_to_treat_en",
+                "size": 100
+              }, {
+                "name": "elec_req_en",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "biometh_en"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0.50608828",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0.50608828",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "ow_to_treat_no",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "no_biometh"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "heat_req_gt1",
+                "size": 100
+              }, {
+                "name": "heat_req_gt2",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "elec_req_gt",
+                "size": 100
+              }, {
+                "name": "biogas_prod_gt",
+                "size": 100
+              }, {
+                "name": "ow_to_treat_gt",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "biometh_gt"
+          } ],
+          "name": "biometh"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "q_en102",
+                "size": 100
+              }, {
+                "name": "q_en101b",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "biogas_req_en",
+                "size": 100
+              }, {
+                "name": "elec_req_en",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "en_bm"
+          } ],
+          "name": "engbm"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "15.393614729",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "15.393614729",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "petrol_consumed",
+                "size": 100
+              }, {
+                "name": "mobility_supplied",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "pc_car"
+          } ],
+          "name": "petrolC"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "q_en102",
+                "size": 100
+              }, {
+                "name": "q_en101b",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "ng_req_engine",
+                "size": 100
+              }, {
+                "name": "elec_req_engine",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "gas_engine"
+          } ],
+          "name": "engng"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "desuph",
+                "size": 100
+              }, {
+                "name": "evap",
+                "size": 100
+              }, {
+                "name": "cond",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "elec_req",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "lt_heat_pump"
+          } ],
+          "name": "hp_low"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "sng_consumed",
+                "size": 100
+              }, {
+                "name": "mobility_supplied",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "sng_car"
+          } ],
+          "name": "sngC"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "ng_consumed",
+                "size": 100
+              }, {
+                "name": "mobility_supplied",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "ng_car"
+          } ],
+          "name": "ngC"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "cleanwater_treated",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "cleanwater"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "organic_treat",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "biowaste"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "msw_treat",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "MSW_u"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "wastewater_treat",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "wastewater"
+          } ],
+          "name": "waste"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0.781170457",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0.781170457",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "b_conv_ng",
+                "size": 100
+              }, {
+                "name": "b_rad_ng",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "ng_req",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "b_ng"
+          } ],
+          "name": "boilng"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "385.377853075",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "385.377853075",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "cold_source_load",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "cold_source"
+          } ],
+          "name": "watercold"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "1",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "ft_dh1",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "wood_req_FT",
+                "size": 100
+              }, {
+                "name": "FT_out",
+                "size": 100
+              }, {
+                "name": "elec_req_FT",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "FTu"
+          } ],
+          "name": "ft"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "steam_gf_pur"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "q_1_103_gt",
+                "size": 100
+              }, {
+                "name": "q_1_101C_gt",
+                "size": 100
+              }, {
+                "name": "q_1_101A_gt",
+                "size": 100
+              }, {
+                "name": "q_1_101B_gt",
+                "size": 100
+              }, {
+                "name": "q_1_123_gt",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "wood_req_gfst2",
+                "size": 100
+              }, {
+                "name": "gas_pro_gfgt1",
+                "size": 100
+              }, {
+                "name": "elec_req_gfst2",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "steam_gf_gt"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "q_1_104_en",
+                "size": 100
+              }, {
+                "name": "q_1_103_en",
+                "size": 100
+              }, {
+                "name": "q_1_104B_en",
+                "size": 100
+              }, {
+                "name": "q_1_101A_en",
+                "size": 100
+              }, {
+                "name": "q_1_101C_en",
+                "size": 100
+              }, {
+                "name": "q_1_101B_en",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "elec_req_gfst1",
+                "size": 100
+              }, {
+                "name": "wood_req_gfst1",
+                "size": 100
+              }, {
+                "name": "gas_pro_gfen1",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "steam_gf_en"
+          } ],
+          "name": "steamgasif"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "meoh_consumed",
+                "size": 100
+              }, {
+                "name": "mobility_supplied",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "meoh_car"
+          } ],
+          "name": "meohC"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "q_1_104B_o_en",
+                "size": 100
+              }, {
+                "name": "q_1_201_en",
+                "size": 100
+              }, {
+                "name": "q_1_104_o_en",
+                "size": 100
+              }, {
+                "name": "q_1_203_en",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "elec_req_gfst3",
+                "size": 100
+              }, {
+                "name": "wood_req_gfst3",
+                "size": 100
+              }, {
+                "name": "gas_pro_gfen2",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "air_gf_en"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "q_1_201_gt",
+                "size": 100
+              }, {
+                "name": "q_1_123_o_gt",
+                "size": 100
+              }, {
+                "name": "q_1_203_gt",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "gas_pro_gfgt2",
+                "size": 100
+              }, {
+                "name": "elec_req_gfst4",
+                "size": 100
+              }, {
+                "name": "wood_req_gfst4",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "air_gf_gt"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "q_1_104B_o_en",
+                "size": 100
+              }, {
+                "name": "q_1_201_en",
+                "size": 100
+              }, {
+                "name": "q_1_104_o_en",
+                "size": 100
+              }, {
+                "name": "q_1_203_en",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "elec_req_gfst3",
+                "size": 100
+              }, {
+                "name": "wood_req_gfst3",
+                "size": 100
+              }, {
+                "name": "gas_pro_gfen2",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "air_gf_pur"
+          } ],
+          "name": "airgasif"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "gh_heating",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "elec_req_gh",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "gh"
+          } ],
+          "name": "ghouse"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "sng_prod_out",
+                "size": 100
+              }, {
+                "name": "sng_lp_in",
+                "size": 100
+              }, {
+                "name": "elec_pres",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "pressur"
+          }, {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "biogas_purif_in",
+                "size": 100
+              }, {
+                "name": "sng_lp_prod_pur",
+                "size": 100
+              }, {
+                "name": "elec_pur",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "purif"
+          } ],
+          "name": "purif"
+        }, {
+          "children": [ {
+            "children": [ {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "multipilcation_factor"
+            }, {
+              "children": [ {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_1"
+              }, {
+                "children": [ {
+                  "name": "0",
+                  "size": 100
+                } ],
+                "name": "time_2"
+              } ],
+              "name": "use_factor"
+            }, {
+              "children": [ {
+                "name": "Impact",
+                "size": 100
+              }, {
+                "name": "Power",
+                "size": 100
+              }, {
+                "name": "Cost",
+                "size": 100
+              }, {
+                "name": "Cinv",
+                "size": 100
+              }, {
+                "name": "dme_consumed",
+                "size": 100
+              }, {
+                "name": "mobility_supplied",
+                "size": 100
+              } ],
+              "name": "streams"
+            } ],
+            "name": "dme_car"
+          } ],
+          "name": "dmeC"
+        } ],
+        "name": "location_Loc"
+      } ],
+      "name": "cluster_Clu"
+    } ],
+    "name": "period_1"
+  } ],
+  "name": "PFE3_mpt_onerun"
+}
