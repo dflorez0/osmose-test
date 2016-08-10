@@ -13,7 +13,7 @@
 local osmose = require 'lib.osmose'
 
 local project = osmose.Project('biomoo', 'OperatingCost')   
-   
+  project.options =  {graph=false}
    --MER ;InvestmentCost; OperatingCost; MechanicalPower; Impact ;TotalCost; OpCostWithImpact; TotalCostWithPower;TotalCostWithImpact;TotalCostWithImpactAndPower;YearlyOperatingCost
  
 project.clusters = { e1={'loc1'}}  --,e2={'loc2'}
@@ -56,7 +56,7 @@ project:load(
    
    )
 	
-project:periode(1):time(1)
+project:scenario(1):time(1)
 
 
 project:optimize {
