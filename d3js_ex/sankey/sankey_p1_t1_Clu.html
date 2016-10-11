@@ -67,7 +67,7 @@ body {
 	<script src = "d3.min.js"></script>
 	<script src = "Sankey.js"></script>
 	<script>
-		var aspect 	=  600/300;
+		var aspect 	=  700/300;
 		var margin 	=  {top: 5, right: 1, bottom: 6, left: 1},
 		width 		= window.innerWidth,
 		height 		= window.innerHeight - margin.top  - margin.bottom;
@@ -185,7 +185,7 @@ body {
 				.attr("dy", ".35em")
 				.attr("text-anchor", "end")
 				.attr("transform", null)
-				.style("font-size","0.9rem")
+				.style("font-size","2.9rem")
 				.text(function(d) { return d.name; })
 				.filter(function(d) { return d.x < width / 2; })
 				.attr("x", 6 + sankey.nodeWidth())

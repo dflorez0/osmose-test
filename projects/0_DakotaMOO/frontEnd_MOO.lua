@@ -12,12 +12,12 @@ local osmose = require 'lib.osmose'
 local project = osmose.Project('S_Problem_MOO', 'OpCostWithImpact') --OpCostWithImpact
 project.operationalCosts = {cost_elec_in = 17.19, cost_elec_out = 16.9, op_time= 2000.0}
 
-project.ecoinvent = {
-  impactMethodName = 'IPCC 2007', -- USEtox IPCC 2013 IMPACT 2002+ (Endpoint)
-  impactCategoryName = 'climate change', -- human toxicity climate change
-  name = 'GWP 100a', -- total GWP 100a
-  folder = 'test/fixtures' -- path to the ecoinvent folder
-}
+--project.ecoinvent = {
+--  impactMethodName = 'IPCC 2007', -- USEtox IPCC 2013 IMPACT 2002+ (Endpoint)
+--  impactCategoryName = 'climate change', -- human toxicity climate change
+--  name = 'GWP 100a', -- total GWP 100a
+--  folder = 'test/fixtures' -- path to the ecoinvent folder
+--}
 
 project.options = {graph = false} --{format = 'jpg', spaghetti = false}}
 project.options.doLCA = false

@@ -5,20 +5,20 @@ local test = osmose.Model 'test'
 
 
 
-test.Class = {
-               Group = 'Matlab model example',
-               Type = 'example 1',
-}
+--test.Class = {
+--               Group = 'Matlab model example',
+--               Type = 'example 1',
+--}
 
-test.OsParam = {
-               OSMOSEVersion = '2.7.8',
-               ETVersion = '2.0.0',
-               Version = '0.8.2'}
+--test.OsParam = {
+--               OSMOSEVersion = '2.7.8',
+--               ETVersion = '2.0.0',
+--               Version = '0.8.2'}
 
-test.Tagging = {
-               TagName = 'test',
-               DisplayName = 'matlab model example 1',
-               Description = 'simple energy integration model'}
+--test.Tagging = {
+--               TagName = 'test',
+--               DisplayName = 'matlab model example 1',
+--               Description = 'simple energy integration model'}
 
 
 -- Add Inputs
